@@ -1,0 +1,63 @@
+.columns
+.loc
+.iloc
+.median
+.mean
+.value_counts
+.count
+.sort_index
+.group_by
+.get_group
+.nlargest
+.smallest
+.apply
+.applymap
+.map
+.replace
+.rename
+.str.contains
+    .lower
+    .upper
+
+.agg
+.append
+.concat 
+
+.dropna()
+.dropna(axis='index',how='any' or 'all',subset=['email']
+this will drop the value if it email column is missing or none
+.isna 
+.fillna('xxx')
+
+.dtypes
+
+to change the datatype
+df['x'].astype(float)
+df.['x'].unique()
+       
+
+.day_name
+to change date from string to datetime:pd.to_datetime
+parse_dates=['X']
+
+dt.day_name
+
+to_csv('fodlername/filename.csv')
+       ('fodlername/filename.tsv',sep='\t')
+to excel:
+       pip install xlwt openpyxl xlrd(work with excel)
+       to_excel('fodlername/filename.xlsx) 	
+       
+to json:
+        to_json('fodlername/filename.json,orient='records', lines=True)(change from dict format to list like)
+
+to sqlalchemy:
+       packages:
+           pip install  sqlalchemy
+           pip install psycopg2-binary(for working with postgress)
+
+from sqlalchemy import create_engine
+import psycopg2
+
+
+engine = create_engine(postgresql://dbuser:dbpass@localhost:(addr))     
